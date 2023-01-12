@@ -9,24 +9,21 @@ function preload(){
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
-  button = (100, 200, 100, 50, "Hello");  
-  button.size(150, 150); 
+  button = (100, 200, 100, 50, "Hello");
+  button.size(150, 150);
   button.position(width/2, height/2);
   button.mousePressed(goToDrawPage); //callback
 
 }
 
 function draw() {
-  background('blue');
+  background('red');
   image(gif_loadImg,-150,0);
   gif_createImg.position(50, 350);
 }
 
 
 
-function goToDrawPage() { 
+function goToDrawPage() {
   window.open("draw.html", "_self");
-} 
-
-
-
+}
